@@ -1,0 +1,21 @@
+@localUrl = http://localhost:8080
+@defaultAppUrl = 
+@remoteUrl = https://{{$defaultAppUrl}}.cfapps.us10-001.hana.ondemand.com
+### Create Product
+POST {{localUrl}}/odata/v4/AdminService/Products
+Authorization: Basic c3lzdGVtOg==
+Content-Type: application/json
+
+{"ID": 2, "title": "My Tutorial Product", "descr": "You are doing an awesome job!"}
+
+
+### Get Products
+GET {{localUrl}}/odata/v4/AdminService/Products
+Authorization: Basic c3lzdGVtOg==
+
+### Create Category
+POST {{localUrl}}/odata/v4/AdminService/Categories
+Authorization: Basic c3lzdGVtOg==
+Content-Type: application/json
+
+{"ID": 1, "name": "Category One"}
