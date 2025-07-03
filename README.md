@@ -3,5 +3,5 @@
 
 Resource ref: https://developers.sap.com/tutorials/cp-cap-java-app-studio.html
 
-Generate Application : ```cds init products-service --add java```
+Generate Application : ```cds init demo --add java```
 
